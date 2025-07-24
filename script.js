@@ -3,7 +3,7 @@ let total = 0;
 function addItem() {
   const nameInput = document.getElementById("itemName");
   const priceInput = document.getElementById("itemPrice");
-  const itemsList = document.getElementById("itemsList");
+  const itemsList = document.getElementById("itemList");
 
   const name = nameInput.value.trim();
   const price = parseFloat(priceInput.value);
@@ -29,4 +29,4 @@ function addItem() {
   nameInput.focus();
 }
 
-document.getElementById("dateTime").innerText = new Date().toLocaleString();
+document.getElementById("date-time").innerText = new Date().toLocaleString();
