@@ -97,4 +97,15 @@ hr {
      .form, .print-btn, .item {
           display: none;
      }
+.recipt {
+          border:none;
+          box-shadow: none;
+     }
+
+     .items .item{
+          display: flex;
+          justify-content:space-between;
+          margin: 5px 0;
+     }
+     
 }
