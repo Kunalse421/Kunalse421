@@ -1,111 +1,75 @@
-body {
-     background-color: aliceblue;
-     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-     justify-content: center;
-     display: flex;
-     padding: 40px;
+#card {
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  display: none;
+  color: red;
 }
 
-.receipt-details {
-     width: 100%;
-     text-align: center;
-     max-width: 500px;
-}
-.title {
-     font-weight: bold;
-     font-style: italic;
-     margin-bottom: 40px;
-}
+.light { background: #f9f9f9; color: #333; }
+.dark { background: #333; color: white; }
+.colorful { background: linear-gradient(to right, #ff9a9e, #fad0c4); color: #111; }
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 30px;
+      background-color: purple
+    }
 
-.form input {
-       margin:5px;
-       padding: 10px;
-       max-width: 40%;
-       border: 3px solid black;
-       border-radius: 18px;
-       font-family:serif;
-}
+    input, select, button {
+      padding: 10px;
+      margin: 10px;
+      font-size: 16px;
+    }
 
-.form button {
-     padding: 5px 15px;
-     margin: 20px;
-     background: black;
-     color:white;
-     font-family: inherit;
-     border:3px solid plum;
-     border: none;
-     cursor: pointer;
-}
+    #card {
+      margin-top: 30px;
+      padding: 30px;
+      border-radius: 12px;
+      display: none;
+      font-size: 18px;
+      transition: all 0.3s ease;
+    }
 
-.receipt {
-     background:white;
-     padding:20px;
-     margin-top: 20px;
-     box-shadow: 1 1 11px grey;
-     border: 3px dashed grey;
-}
+  
+    .sad {
+      background-color: #dbe9f4;
+      color: #2c3e50;
+    }
 
-h2 {
-     text-align: center;
-     font-size: larger;
-}
+    .excited {
+      background: linear-gradient(135deg, #f6d365, #fda085);
+      color: #222;
+    }
 
-.date-time{
-    font-size: 1px;
-    margin: 5px ;
-    text-align: center;
-}
+    .motivated {
+      background: linear-gradient(135deg, #00c9ff, #92fe9d);
+      color: #000;
+    }
 
-hr {
-     border-top: 1px dashed black;
-}
+    .angry {
+      background-color: #ff4e50;
+      color: #fff;
+    }
 
-.items .item.total{
-     display: flex;
-     font-size: 2rem;
-     margin: 6px;
-     justify-content: center;
-}
+    .confused {
+      background-color: #ffeaa7;
+      color: #2d3436;
+    }
 
-.total{
-     font-weight: bold;
-     font-size: 1rem;
-}
+    .relax {
+      background-color: #c8e6c9;
+      color: #2e7d32;
+    }
 
-.thank-you{
-     text-align: center;
-     font-style: oblique;
-     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-     margin: 2rem;
-}
+    .loving {
+      background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+      color: #880e4f;
+    }
 
-.print-btn {
-     margin-top:20px;
-     padding: 10px;
-     font-family: inherit;
-     background: black;
-     color:white;
-     border:none;
-     border-radius: 4px;
-     cursor: pointer;
-}
-@media print {
-     body {
-          background: white;
-     }
-
-     .form, .print-btn, .item {
-          display: none;
-     }
-.recipt {
-          border:none;
-          box-shadow: none;
-     }
-
-     .items .item{
-          display: flex;
-          justify-content:space-between;
-          margin: 5px 0;
-     }
-     
-}
+    .tired {
+      background-color: #cfd8dc;
+      color: #37474f;
+    }
+  
