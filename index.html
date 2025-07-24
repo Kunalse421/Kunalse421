@@ -12,12 +12,12 @@
 
           <div class="form">
                <input type="text" id = itemName placeholder="item name"/>
-               <input type="number" id="itemPrice" placeholder="Price(₹,$)"/>
-               <button onclick="addItem">AddItem</button>
+               <input type="number" id="itemPrice" placeholder="Price(₹)"/>
+               <button onclick="addItem()">AddItem</button>
           </div>
 
           <div class="receipt" id="receipt">
-               <h2 class="store Name">Proxmity-Mart</h2>
+               <h2 class="storeName">Proxmity-Mart</h2>
                <p class="date-time" id="date-time"></p>
                <hr/>
           
@@ -26,7 +26,7 @@
           <hr/>
 
           <div class="total" id="totalRow">
-          <span>Total</span><span id="total Amount">₹,$ 0.00</span>
+          <span>Total</span><span id="total Amount">₹0.00</span>
           </div>
           <p class="thank-you">Thank You for Shopping Vist Again!</p>
           </div>
