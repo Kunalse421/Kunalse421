@@ -1,37 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-     <meta charset="UTF-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>Receipt Generator</title>
-     <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mood-Based Greeting Card</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-     <div class="receipt-details">
-          <h1 class="title">Receipt-Generator</h1>
 
-          <div class="form">
-               <input type="text" id = itemName placeholder="item name"/>
-               <input type="number" id="itemPrice" placeholder="Price(₹)"/>
-               <button onclick="addItem()">AddItem</button>
-          </div>
+  <h1>🌈 Mood-Based Greeting Card Generator</h1>
 
-          <div class="receipt" id="receipt">
-               <h2 class="storeName">Proxmity-Mart</h2>
-               <p class="date-time" id="date-time"></p>
-               <hr/>
-          
+  <input type="text" id="userName" placeholder="Enter your name" />
+  
+  <select id="theme">
+    <option value="">Select Mood</option>
+    <option value="sad">😢 Sad</option>
+    <option value="excited">😎 Excited</option>
+    <option value="motivated">💡 Motivated</option>
+    <option value="angry">😠 Angry</option>
+    <option value="confused">😕 Confused</option>
+    <option value="relax">🧘 Relax</option>
+    <option value="loving">😍 Loving</option>
+    <option value="tired">😴 Tired</option>
+  </select>
 
-          <div class="items" id="itemList"></div>
-          <hr/>
+  <button onclick="generateCard()">Generate Card</button>
 
-          <div class="total" id="totalRow">
-          <span>Total</span><span id="total Amount">₹0.00</span>
-          </div>
-          <p class="thank-you">Thank You for Shopping Vist Again!</p>
-          </div>
-          <button class="print-btn" id="print()">Print Receipt</button>
-     </div>
-     <script src="script.js"></script>
+  <div id="card"></div>
+  <script src="script.js"></script>
 </body>
 </html>
